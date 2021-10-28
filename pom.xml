@@ -66,6 +66,11 @@
 		<ant-nodeps.version>1.8.1</ant-nodeps.version>
 		<antelopetasks.version>3.2.10</antelopetasks.version>
 		<build-helper-maven-plugin>1.9.1</build-helper-maven-plugin>
+
+		<skipTests>true</skipTests>
+		<maven.javadoc.skip>true</maven.javadoc.skip>
+		<checkstyle.skip>true</checkstyle.skip>
+		<docker.prefix>docker.datav.com/datav</docker.prefix>
 	</properties>
 
 	<modules>
