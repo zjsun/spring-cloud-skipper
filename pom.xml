@@ -67,6 +67,7 @@
 		<antelopetasks.version>3.2.10</antelopetasks.version>
 		<build-helper-maven-plugin>1.9.1</build-helper-maven-plugin>
 
+		<!-- datav -->
 		<skipTests>true</skipTests>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 		<checkstyle.skip>true</checkstyle.skip>
@@ -260,6 +261,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
+				<configuration>
+					<skip>${checkstyle.skip}</skip>
+					<skipExec>${checkstyle.skip}</skipExec>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
